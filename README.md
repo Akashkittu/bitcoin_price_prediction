@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ### Clone the Repository
 
 ```bash
-git clone ithub.com/Akashkittu/bitcoin_price_predictionn.git
+git clone https://github.com/Akashkittu/bitcoin_price_predictionn.git
 cd bitcoin_price_prediction
 ```
 
