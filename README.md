@@ -35,3 +35,21 @@ pip install -r requirements.txt
 git clone ithub.com/Akashkittu/bitcoin_price_predictionn.git
 cd bitcoin_price_prediction
 ```
+
+## Dataset
+
+BTC-USD.csv containing historical Bitcoin prices (Date, Open, High, Low, Close, Adj Close, Volume).
+
+Place the file in the same directory as the notebook/script before running.
+
+## Results
+
+Visualization of Actual vs. Predicted close prices on the test split.
+
+Future forecast overlay for a specified number of days.
+
+Error metrics (e.g., MSE/RMSE/MAE) can be reported from the notebook.
+
+## Contributing
+
+Feel free to fork this repository, create a branch, and submit a pull request for improvements
