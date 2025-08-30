@@ -50,3 +50,7 @@ cd bitcoin_price_prediction
 ## Contributing
 
 Feel free to fork this repository, create a branch, and submit a pull request for improvements
+
+## Contributing
+
+Feel free to fork this repository, create a branch, and submit a pull request for improvements.
