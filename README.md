@@ -27,6 +27,7 @@ Ensure you have Python installed (Python 3.8+ recommended). Install dependencies
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### Clone the Repository
 
