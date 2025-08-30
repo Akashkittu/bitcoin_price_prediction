@@ -1,67 +1,36 @@
-This project implements a Bitcoin price prediction model using a Long Short-Term Memory (LSTM) neural network, built with TensorFlow and Keras. The model is designed to analyze historical time-series data and forecast future price movements.
+# Bitcoin Price Prediction | LSTM
 
-## Project Structure
-- **bitcoin-price-prediction.ipynb**: The main Jupyter Notebook containing the complete code for data preprocessing, model building, training, and prediction.  
-- **BTC-USD.csv**: The dataset used for training and evaluating the model. It contains historical price data for Bitcoin.
+## Overview
 
-## Dependencies
-The project requires the following Python libraries. You can install them using pip:
+This project focuses on forecasting Bitcoin prices using deep learning techniques. By training a Bidirectional Long Short-Term Memory (LSTM) model with TensorFlow and Keras, the system analyzes historical BTC-USD data and predicts future price movements. It includes end-to-end steps for preprocessing, model training, evaluation, and visualization.
+
+## Features
+
+✅ Bidirectional LSTM for robust sequence modeling of time-series data  
+✅ MinMax scaling and sliding window generation for stable training  
+✅ Dropout regularization to reduce overfitting  
+✅ De-scaling of predictions back to original price units  
+✅ Visualization of Actual vs. Predicted and multi-day Future Forecast
+
+## Technologies Used
+
+- **TensorFlow/Keras** – Model building and training  
+- **Pandas/NumPy** – Data loading and manipulation  
+- **scikit-learn** – MinMaxScaler and utilities  
+- **Matplotlib** – Plotting and visualization
+
+## Installation
+
+### Prerequisites
+
+Ensure you have Python installed (Python 3.8+ recommended). Install dependencies using:
 
 ```bash
-pip install tensorflow keras pandas numpy scikit-learn matplotlib
-How to Run
-Clone the repository:
+pip install -r requirements.txt
 
-bash
-Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-Ensure you have the data: Place the BTC-USD.csv file in the same directory as the Jupyter Notebook.
+### Clone the Repository
 
-Launch Jupyter Notebook:
-
-bash
-Copy code
-jupyter notebook
-Open the bitcoin-price-prediction.ipynb file and run all the cells in sequence.
-
-Methodology
-The project follows these key steps:
-
-Data Loading and Preprocessing:
-The BTC-USD.csv file is loaded into a Pandas DataFrame.
-
-The data is sorted by date.
-
-The Close price is scaled using MinMaxScaler to normalize the values for the neural network.
-
-The data is split into training and testing sets.
-
-Model Architecture:
-A Sequential model is built with the following layers:
-
-Bidirectional LSTM: Highly effective for time-series data, as it processes the sequence both forwards and backwards.
-
-Dropout: Used to prevent the model from overfitting.
-
-Dense: The final output layer that provides the predicted price.
-
-Training:
-The model is compiled with the Adam optimizer and mean_squared_error as the loss function.
-
-The model is trained on the preprocessed training data.
-
-Prediction and Visualization:
-The trained model makes predictions on the test set.
-
-A custom function predicts future prices for a specified number of days.
-
-The predictions are de-scaled to their original price values.
-
-A plot is generated to visualize the actual prices, predicted prices, and the future forecast, providing a clear view of the model's performance.
-
-Results
-The visualization in the notebook shows the model's ability to track the actual Bitcoin price and its forecasted future trend.
-
-Contributing
-Feel free to open issues or submit pull requests to improve the model or add new features.
+```bash
+git clone ithub.com/Akashkittu/bitcoin_price_predictionn.git
+cd bitcoin_price_prediction
+```
