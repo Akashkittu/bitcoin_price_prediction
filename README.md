@@ -38,17 +38,14 @@ cd bitcoin_price_prediction
 
 ## Dataset
 
-BTC-USD.csv containing historical Bitcoin prices (Date, Open, High, Low, Close, Adj Close, Volume).
-
-Place the file in the same directory as the notebook/script before running.
+- BTC-USD.csv containing historical Bitcoin prices (Date, Open, High, Low, Close, Adj Close, Volume).
+- Place the file in the same directory as the notebook/script before running.
 
 ## Results
 
-Visualization of Actual vs. Predicted close prices on the test split.
-
-Future forecast overlay for a specified number of days.
-
-Error metrics (e.g., MSE/RMSE/MAE) can be reported from the notebook.
+- Visualization of Actual vs. Predicted close prices on the test split.
+- Future forecast overlay for a specified number of days.
+- Error metrics (e.g., MSE/RMSE/MAE) can be reported from the notebook.
 
 ## Contributing
 
